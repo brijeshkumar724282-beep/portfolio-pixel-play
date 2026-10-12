@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Play | Playful Portfolio for Illustrators</title>
+<meta name="description" content="Pixel Play is a playful portfolio template for illustrators and content creators. Bold shapes, sticker style badges and chunky cards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="blob" id="blob" aria-hidden="true"></div>
+
+<header class="navwrap" id="top">
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#top" class="logo">
+      <span class="logoMark">P</span>
+      <span class="logoText">Pixel Play</span>
+    </a>
+    <div class="links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#words">Kind Words</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="navCta">
+      <a href="#contact" class="btn btnSmall btnCoral">Hire Me</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobileMenu" id="mobileMenu">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#words">Kind Words</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btnCoral">Hire Me</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="heroInner">
+    <div class="heroCopy reveal">
+      <span class="sticker stickerYellow spinSlow">Open for fresh projects</span>
+      <h1>Playful art that makes people <span class="hl hlCoral">smile</span> and brands <span class="hl hlTeal">shine</span></h1>
+      <p class="lede">Hi, I am Poppy. I draw bold characters, joyful brand worlds and scroll stopping content for kind clients everywhere.</p>
+      <div class="heroBtns">
+        <a href="#work" class="btn btnInk">See My Work</a>
+        <a href="#contact" class="btn btnWhite">Say Hello</a>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <strong>120</strong>
+          <span>Happy projects</span>
+        </div>
+        <div class="stat">
+          <strong>48</strong>
+          <span>Kind clients</span>
+        </div>
+        <div class="stat">
+          <strong>6</strong>
+          <span>Years of play</span>
+        </div>
+      </div>
+    </div>
+    <div class="heroArt reveal" aria-hidden="true">
+      <div class="shapeCircle"></div>
+      <div class="shapeBlob"></div>
+      <div class="shapeCard cardA">
+        <div class="miniFace"><span class="eye"></span><span class="eye"></span></div>
+        <div class="miniSmile"></div>
+        <p>Brand mascot</p>
+      </div>
+      <div class="shapeCard cardB">
+        <div class="miniBars"><i></i><i></i><i></i><i></i></div>
+        <p>Content kit</p>
+      </div>
+      <span class="floatSticker fs1">Wow</span>
+      <span class="floatSticker fs2">Fun</span>
+      <span class="floatSticker fs3">Pop</span>
+      <span class="floatDot d1"></span>
+      <span class="floatDot d2"></span>
+      <span class="floatDot d3"></span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marqueeTrack">
+    <span>Illustration</span><i>•</i>
+    <span>Brand Worlds</span><i>•</i>
+    <span>Stickers</span><i>•</i>
+    <span>Motion Snippets</span><i>•</i>
+    <span>Book Covers</span><i>•</i>
+    <span>Social Kits</span><i>•</i>
+    <span>Illustration</span><i>•</i>
+    <span>Brand Worlds</span><i>•</i>
+    <span>Stickers</span><i>•</i>
+    <span>Motion Snippets</span><i>•</i>
+    <span>Book Covers</span><i>•</i>
+    <span>Social Kits</span><i>•</i>
+  </div>
+</div>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="secHead reveal">
+      <span class="sticker stickerTeal">Selected work</span>
+      <h2>A rainbow of recent projects</h2>
+      <p>Tap a tag to filter the gallery. Every card is a real world project with playful color and character.</p>
+    </div>
+    <div class="filters reveal" role="tablist" aria-label="Filter work">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="illustration">Illustration</button>
+      <button class="chip" data-filter="branding">Branding</button>
+      <button class="chip" data-filter="motion">Motion</button>
+    </div>
+    <div class="grid" id="workGrid">
+      <article class="card reveal" data-cat="illustration">
+        <div class="art artYellow">
+          <span class="artSun"></span>
+          <span class="artHill"></span>
+          <span class="artChar"><i></i><i></i></span>
+        </div>
+        <div class="cardBody">
+          <span class="tag tagCoral">Illustration</span>
+          <h3>Sunny Book Series</h3>
+          <p>Twelve covers full of warmth, wonder and whimsy for young readers.</p>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="branding">
+        <div class="art artCoral">
+          <span class="artCircle"></span>
+          <span class="artCircle small"></span>
+          <span class="artSmileBig"></span>
+        </div>
+        <div class="cardBody">
+          <span class="tag tagTeal">Branding</span>
+          <h3>Berry Soda World</h3>
+          <p>Mascot, pack and poster system for a fizzy drink with bounce.</p>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="motion">
+        <div class="art artTeal">
+          <span class="artBolt"></span>
+          <span class="artRing"></span>
+        </div>
+        <div class="cardBody">
+          <span class="tag tagYellow">Motion</span>
+          <h3>Bouncy App Intro</h3>
+          <p>Loopy character animation that lifts day one onboarding.</p>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="illustration">
+        <div class="art artInk">
+          <span class="artMoon"></span>
+          <span class="artStar s1"></span>
+          <span class="artStar s2"></span>
+          <span class="artStar s3"></span>
+        </div>
+        <div class="cardBody">
+          <span class="tag tagCoral">Illustration</span>
+          <h3>Night Market Map</h3>
+          <p>A giant fold out map with fifty tiny stories hidden inside.</p>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="branding">
+        <div class="art artWhite">
+          <span class="artStripe st1"></span>
+          <span class="artStripe st2"></span>
+          <span class="artStripe st3"></span>
+          <span class="artBadge"> Yum </span>
+        </div>
+        <div class="cardBody">
+          <span class="tag tagTeal">Branding</span>
+          <h3>Snack Club Identity</h3>
+          <p>Sticker first identity built for lunchboxes and launch days.</p>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="motion">
+        <div class="art artMix">
+          <span class="artPlay"></span>
+          <span class="artBar b1"></span>
+          <span class="artBar b2"></span>
+          <span class="artBar b3"></span>
+        </div>
+        <div class="cardBody">
+          <span class="tag tagYellow">Motion</span>
+          <h3>Creator Loop Pack</h3>
+          <p>Thirty tiny loops for reels, intros and channel art.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section alt" id="services">
+  <div class="wrap">
+    <div class="secHead reveal">
+      <span class="sticker stickerCoral">Services</span>
+      <h2>Ways we can play together</h2>
+      <p>Clear packages, honest pricing and art that ships on time every time.</p>
+    </div>
+    <div class="grid3">
+      <div class="svc reveal">
+        <div class="svcIcon bgYellow">A</div>
+        <h3>Brand Illustration</h3>
+        <p>Custom characters, scenes and spot art that give your brand a voice full of joy.</p>
+        <ul>
+          <li>Mascot and cast design</li>
+          <li>Scene and spot art</li>
+          <li>Style guide sheet</li>
+        </ul>
+        <p class="price">From 900</p>
+      </div>
+      <div class="svc reveal">
+        <div class="svcIcon bgCoral">B</div>
+        <h3>Content Kit</h3>
+        <p>Thumbs, banners, stickers and post templates for creators who publish daily.</p>
+        <ul>
+          <li>Channel art set</li>
+          <li>Sticker and emoji set</li>
+          <li>Post templates</li>
+        </ul>
+        <p class="price">From 450</p>
+      </div>
+      <div class="svc reveal">
+        <div class="svcIcon bgTeal">C</div>
+        <h3>Motion Snippets</h3>
+        <p>Short bouncy loops that turn quiet pages into lively places people love.</p>
+        <ul>
+          <li>Logo bounce loop</li>
+          <li>Intro and outro loops</li>
+          <li>Social cutdowns</li>
+        </ul>
+        <p class="price">From 650</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="secHead reveal">
+      <span class="sticker stickerYellow">Process</span>
+      <h2>Simple steps, zero stress</h2>
+      <p>A friendly flow from first hello to final files in about three weeks.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="stepNum">01</span>
+        <h3>Say Hello</h3>
+        <p>Share your goals, timeline and vibe. We chat and align on scope.</p>
+      </div>
+      <div class="step reveal">
+        <span class="stepNum">02</span>
+        <h3>Sketch</h3>
+        <p>Loose ideas first. You pick a direction we both adore.</p>
+      </div>
+      <div class="step reveal">
+        <span class="stepNum">03</span>
+        <h3>Color</h3>
+        <p>Bold fills, chunky lines and texture bring the world to life.</p>
+      </div>
+      <div class="step reveal">
+        <span class="stepNum">04</span>
+        <h3>Launch</h3>
+        <p>Final files plus a mini guide so everything stays crisp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section alt" id="words">
+  <div class="wrap">
+    <div class="secHead reveal">
+      <span class="sticker stickerTeal">Kind words</span>
+      <h2>Clients are smiling</h2>
+      <p>Short notes from lovely people I have drawn for lately.</p>
+    </div>
+    <div class="slider reveal">
+      <div class="slides" id="slides">
+        <blockquote class="slide active">
+          <div class="stars" aria-label="5 out of 5 stars">Rated 5 of 5</div>
+          <p>Poppy turned our plain app into a living world. Signups jumped and users send fan art of our mascot weekly.</p>
+          <footer><strong>Maya R.</strong><span>Founder, Berry Soda</span></footer>
+        </blockquote>
+        <blockquote class="slide">
+          <div class="stars" aria-label="5 out of 5 stars">Rated 5 of 5</div>
+          <p>Fast, funny and so skilled. My channel finally looks like me and sponsors noticed within days.</p>
+          <footer><strong>Leo K.</strong><span>Creator, 800k followers</span></footer>
+        </blockquote>
+        <blockquote class="slide">
+          <div class="stars" aria-label="5 out of 5 stars">Rated 5 of 5</div>
+          <p>Our book series sold out twice. Kids hug the covers. That says it all about the art.</p>
+          <footer><strong>Ana S.</strong><span>Publisher, Sunny Books</span></footer>
+        </blockquote>
+      </div>
+      <div class="sliderCtl">
+        <button class="roundBtn" id="prevBtn" aria-label="Previous testimonial">Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="roundBtn" id="nextBtn" aria-label="Next testimonial">Next</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap contactGrid">
+    <div class="contactInfo reveal">
+      <span class="sticker stickerCoral">Contact</span>
+      <h2>Lets make something joyful</h2>
+      <p>Tell me about your project. I reply within two days with ideas and a quote.</p>
+      <div class="infoCards">
+        <div class="infoCard"><strong>Email</strong><span>hello@pixelplay.studio</span></div>
+        <div class="infoCardsRow">
+          <div class="infoCard"><strong>Studio</strong><span>Portland, works worldwide</span></div>
+          <div class="infoCard"><strong>Hours</strong><span>Mon to Fri, 9 to 5</span></div>
+        </div>
+      </div>
+    </div>
+    <form class="form reveal" id="contactForm" novalidate>
+      <label>Your name
+        <input type="text" id="fName" name="name" placeholder="What should I call you" autocomplete="name">
+        <small class="err" id="eName"></small>
+      </label>
+      <label>Your email
+        <input type="email" id="fEmail" name="email" placeholder="you@example.com" autocomplete="email">
+        <small class="err" id="eEmail"></small>
+      </label>
+      <label>Project type
+        <select id="fType" name="type">
+          <option>Brand Illustration</option>
+          <option>Content Kit</option>
+          <option>Motion Snippets</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>Tell me more
+        <textarea id="fMsg" name="message" rows="4" placeholder="Goals, timeline and vibe"></textarea>
+        <small class="err" id="eMsg"></small>
+      </label>
+      <button type="submit" class="btn btnCoral btnFull">Send Message</button>
+      <p class="formOk" id="formOk" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footInner">
+    <div class="footBrand">
+      <span class="logoMark">P</span>
+      <div>
+        <strong>Pixel Play</strong>
+        <p>Playful portfolio for joyful brands and creators.</p>
+      </div>
+    </div>
+    <div class="footLinks">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="btn btnYellow btnSmall" id="toTop">Back To Top</button>
+  </div>
+  <div class="wrap footBase">
+    <p>© <span id="year">2026</span> Pixel Play Studio. Made with love and bold color.</p>
+    <p>All art shown is original and owned by the studio.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
